@@ -1,0 +1,147 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+header {
+    background: variaveis.$gradiente-primario;
+    padding: 2rem;
+
+    nav {
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10rem;
+
+        .linha {
+            border-top: 1px solid black;
+            width: 80%;
+        }
+
+        ul {
+            display: inline-flex;
+            gap: 9rem;
+
+            li {
+                list-style-type: none;
+            }
+
+            a {
+                text-decoration: none;
+                @include mixins.ff-fs-cl(variaveis.$ft-textos, 1rem, variaveis.$cor-primaria);
+                font-weight: 500;
+                transition: .3s;
+
+                &:hover {
+                    transform: scale(1.2);
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    #home {
+        max-width: 1040px;
+        @include mixins.margem-central(80%);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .textos-home {
+            width: 464px;
+
+            h1 {
+                font-size: 42px;
+                color: variaveis.$cor-primaria;
+                margin-bottom: 2rem;
+                font-family: variaveis.$ft-titulos;
+
+                span {
+                    color: variaveis.$cor-secundaria;
+                }
+            }
+
+            p {
+                font-family: "Montserrat", sans-serif;
+                font-size: 1rem;
+                color: #0C0421;
+            }
+
+            .btn-main {
+                width: 280px;
+                height: 66px;
+                color: #fff;
+                border: none;
+                outline: none;
+                border-radius: 66px;
+                background: variaveis.$cor-secundaria;
+                font-size: 1.3rem;
+                transition: .3s;
+
+                &:hover {
+                    background: variaveis.$cor-default;
+                }
+            }
+        }
+
+        .img-home {
+            max-width: 474px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .linha {
+        display: none;
+    }
+
+    #home {
+        flex-direction: column;
+    }
+
+    .img-home {
+        margin-top: 20px;
+    }
+
+    header #home .textos-home {
+        width: 270px;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    #nosso-espaco .detalhes {
+        width: 100%;
+        display: inline-flex;
+
+        flex-direction: column-reverse;
+        gap: 2rem;
+        padding: 2rem 0;
+    }
+
+    #nosso-espaco .detalhes .espaco-textos .titulo {
+        font-family: "Krona One", sans-serif;
+        font-size: 1.6rem;
+        color: #cb6a7e;
+        font-weight: 500;
+    }
+
+    .img-espaco {
+        width: 270px;
+    }
+    header #home .img-home img {
+        width: 280px;
+        border-radius: 10px;
+    }
+}

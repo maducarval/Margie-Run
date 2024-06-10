@@ -1,0 +1,106 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+#nosso-espaco {
+    @include mixins.margem-central(80%);
+
+    .detalhes {
+        width: 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 2rem;
+        padding: 2rem 0;
+        flex-direction: row-reverse;
+
+        .accordion {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+
+            .accordion-item {
+                border-top: 1px solid #ddd;
+
+                .accordion-button {
+                    color: #fff;
+                    width: 100%;
+                    padding: 15px;
+                    text-align: left;
+                    background-color: variaveis.$cor-secundaria;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    font-size: 16px;
+                    border-radius: 10px;
+                }
+
+                .accordion-button:hover {
+                    background-color: variaveis.$cor-default;
+                }
+
+                .accordion-content {
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+                    padding: 0 15px;
+                    background-color: variaveis.$gradiente-primario;
+                    // border-top: 1px solid #ddd;
+                }
+
+                .accordion-content p {
+                    margin: 0;
+                    padding: 15px 0;
+                }
+            }
+
+            .accordion-item:first-child {
+                border-top: none;
+            }
+        }
+        .imgs-espaco {
+            max-width: 500px;
+        }
+
+        .espaco-textos {
+            @extend .imgs-espaco;
+
+            .titulo {
+                @include mixins.ff-fs-cl(variaveis.$ft-titulos, 1.5rem, variaveis.$cor-secundaria);
+                font-weight: 500;
+            }
+
+            .infos {
+                @include mixins.ff-fs-cl(variaveis.$ft-textos, 1rem, variaveis.$cor-primaria);
+            }
+
+            .separador {
+                width: 43%;
+            }
+            .margarida_separador{
+                width: 13%;
+            }
+
+        }
+
+        &:nth-child(2) {
+            flex-direction: row;
+        }
+
+    }
+}
+
+@media (max-width: 768px) {
+    #nosso-espaco .detalhes {
+        flex-direction: column-reverse;
+        &:nth-child(2) {
+            flex-direction: column;
+        }
+    }
+}
+
+.ranking{
+display: flex;
+justify-content: center;
+}
