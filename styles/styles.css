@@ -5,7 +5,7 @@ body {
 }
 
 header {
-  background: linear-gradient(180deg, rgba(211, 146, 159, 0.968627451) 0%, rgba(255, 255, 255, 0.7647058824) 94.87%);
+  background: #fafbf6;
   padding: 2rem;
 }
 header nav {
@@ -170,7 +170,7 @@ header #home .img-home img {
   overflow: hidden;
   transition: max-height 0.3s ease-out, padding 0.3s ease-out;
   padding: 0 15px;
-  background-color: linear-gradient(180deg, rgba(211, 146, 159, 0.968627451) 0%, rgba(255, 255, 255, 0.7647058824) 94.87%);
+  background-color: linear-gradient(180deg, rgba(211, 146, 159, 0.968627451) 0%, #fafbf6 94.87%);
 }
 #nosso-espaco .detalhes .accordion .accordion-item .accordion-content p {
   margin: 0;
@@ -226,7 +226,7 @@ header #home .img-home img {
   gap: 1.5rem;
 }
 #servico .cards .card {
-  background: linear-gradient(180deg, rgba(211, 146, 159, 0.968627451) 0%, rgba(255, 255, 255, 0.7647058824) 94.87%);
+  background: linear-gradient(180deg, rgba(211, 146, 159, 0.968627451) 0%, #fafbf6 94.87%);
   padding: 1rem 1.5rem;
   text-align: center;
   border: 1px solid white;
@@ -380,7 +380,7 @@ header #home .img-home img {
 }
 #contatos .contatos-form {
   max-width: 50%;
-  background: linear-gradient(180deg, rgba(211, 146, 159, 0.968627451) 0%, rgba(255, 255, 255, 0.7647058824) 94.87%);
+  background: linear-gradient(180deg, rgba(211, 146, 159, 0.968627451) 0%, #fafbf6 94.87%);
   padding: 2rem 3rem;
   border-radius: 2rem;
 }
