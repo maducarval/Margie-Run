@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
@@ -81,6 +82,7 @@ header #home .img-home {
 }
 header #home .img-home img {
   width: 100%;
+  border-radius: 15px;
 }
 
 /* Estilos responsivos */
@@ -216,6 +218,13 @@ header #home .img-home img {
   justify-content: center;
 }
 
+#nosso-espaco .detalhes .texto-accordion {
+  font-family: "Krona One", sans-serif;
+  font-size: 0.8rem;
+  color: #cb6a7e;
+  font-weight: 300;
+}
+
 #servico {
   padding: 5rem 0;
 }
@@ -224,9 +233,10 @@ header #home .img-home img {
   width: 80%;
   display: flex;
   gap: 1.5rem;
+  justify-content: center;
 }
 #servico .cards .card {
-  background: linear-gradient(180deg, rgba(211, 146, 159, 0.968627451) 0%, #fafbf6 94.87%);
+  background: #cb6a7e;
   padding: 1rem 1.5rem;
   text-align: center;
   border: 1px solid white;
@@ -243,6 +253,35 @@ header #home .img-home img {
   color: #0C0421;
 }
 
+.galeria {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.botao-galeria {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.Fotografa {
+  text-decoration: none;
+  color: #cb6a7e;
+  margin-right: 10px;
+}
+
+.galeria_img {
+  width: 259px;
+  height: 172px;
+  border-radius: 15px;
+}
+
 @media (max-width: 768px) {
   #servico .cards {
     margin: 0 auto;
@@ -257,6 +296,27 @@ header #home .img-home img {
     margin: 20px auto;
     border: 1px solid #ddd;
     border-radius: 5px;
+  }
+  .titulo {
+    text-align: center;
+    font-family: "Krona One", sans-serif;
+    font-size: 1.6rem;
+    color: #cb6a7e;
+    font-weight: 500;
+  }
+  .margarida {
+    margin-bottom: 20px;
+  }
+  .galeria {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .galeria_img {
+    width: 259px;
+    height: 172px;
+    border-radius: 15px;
   }
 }
 .redes_sociais {
@@ -276,21 +336,26 @@ header #home .img-home img {
   margin-bottom: 20px;
 }
 
-.galeria {
+.btn-rosa {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  justify-content: center;
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+.btn-rosa-insta {
+  display: inline;
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+.fotografa-div {
+  display: flex;
   align-items: center;
 }
 
-.galeria_img {
-  width: 259px;
-  height: 172px;
-  border-radius: 15px;
-}
-
 .btn-main {
-  width: 280px;
+  width: 260px;
   height: 60px;
   color: #fff;
   border: none;
@@ -299,7 +364,6 @@ header #home .img-home img {
   background: #cb6a7e;
   font-size: 1.3rem;
   transition: 0.3s;
-  margin-left: 15px;
 }
 
 .btn-main:hover {
@@ -312,6 +376,22 @@ header #home .img-home img {
   font-size: 1.6rem;
   color: #cb6a7e;
   font-weight: 500;
+}
+
+.card-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-img img {
+  margin-bottom: 5px;
+  border-radius: 15px; /* Espaço entre as imagens */
+}
+
+.instagram {
+  display: flex;
+  justify-content: center;
 }
 
 #desconto {
@@ -427,12 +507,30 @@ header #home .img-home img {
   background: #cb6a7e;
 }
 
-footer {
-  background: #e6c1c8;
+.footer {
   padding: 2rem;
   text-align: center;
   margin-top: 5rem;
+  background-size: 15px;
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   color: #0C0421;
+}
+
+.footer {
+  background: url(../../assets/footer.png);
+  display: inline-block;
+  padding-left: 50px;
+  line-height: 15px;
+  width: 93.8%;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    background: url(../../assets/footer.png);
+    display: inline-block;
+    padding-left: 50px;
+    line-height: 15px;
+    width: 80%;
+  }
 }/*# sourceMappingURL=styles.css.map */

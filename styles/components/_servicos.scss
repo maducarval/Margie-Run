@@ -9,9 +9,10 @@
         @include mixins.margem-central(80%);
         display: flex;
         gap: 1.5rem;
+        justify-content: center;
 
         .card {
-            background: variaveis.$gradiente-primario;
+            background: variaveis.$cor-secundaria;
             padding: 1rem 1.5rem;
             text-align: center;
             border: 1px solid white;
@@ -27,7 +28,32 @@
         }
     }
 }
+.galeria {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+.botao-galeria{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
 
+}
+.Fotografa{
+text-decoration: none;
+color: #cb6a7e;
+margin-right: 10px;
+}
+.galeria_img{
+    width: 259px;
+    height: 172px;
+    border-radius: 15px;
+}
 @media (max-width: 768px) {
     #servico .cards {
         margin: 0 auto;
@@ -43,6 +69,27 @@
         margin: 20px auto;
         border: 1px solid #ddd;
         border-radius: 5px;
+    }
+    .titulo {
+        text-align: center;
+        font-family: "Krona One", sans-serif;
+        font-size: 1.6rem;
+        color: #cb6a7e;
+        font-weight: 500;
+    }
+    .margarida{
+        margin-bottom: 20px;
+    }
+    .galeria{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .galeria_img{
+        width: 259px;
+        height: 172px;
+        border-radius: 15px;
     }
 }
 .redes_sociais{ 
@@ -60,30 +107,36 @@
 .margarida{
     margin-bottom: 20px;
 }
-.galeria{
+
+.btn-rosa{
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    text-decoration: none;
 }
-.galeria_img{
-    width: 259px;
-    height: 172px;
-    border-radius: 15px;
+.btn-rosa-insta{
+    display: inline;
+
+    margin-top: 15px;
+    text-decoration: none;
+}
+.fotografa-div{
+    
+        display: flex;
+        align-items: center;
+    
 }
 .btn-main {
-    width: 280px;
+    width: 260px;
     height: 60px;
     color: #fff;
     border: none;
     outline: none;
     border-radius: 66px;
-    background: #cb6a7e;
+    background: variaveis.$cor-secundaria;
     font-size: 1.3rem;
-    transition: 0.3s;
-    margin-left: 15px;
+    transition: .3s;
     }
-
     .btn-main:hover {
         background: variaveis.$cor-default;
     }
@@ -94,3 +147,18 @@
         color: #cb6a7e;
         font-weight: 500;
     }
+ 
+.card-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-img img {
+    margin-bottom: 5px; 
+    border-radius: 15px;/* Espaço entre as imagens */
+}
+.instagram{
+    display: flex;
+    justify-content: center;
+}
