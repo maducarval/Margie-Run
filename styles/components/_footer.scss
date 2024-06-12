@@ -7,9 +7,6 @@
     margin-top: 5rem;
     background-size: 15px;
     @include mixins.ff-fs-cl(variaveis.$ft-textos, 1rem, variaveis.$cor-primaria);
-}
-
-.footer{
     background: url(../../assets/footer.png) ;
     display: inline-block;
     padding-left: 50px;
@@ -23,6 +20,6 @@
         display: inline-block;
         padding-left: 50px;
         line-height: 15px;
-        width: 80%;
+        width:240px;
     }
 }

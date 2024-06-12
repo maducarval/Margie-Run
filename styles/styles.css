@@ -141,6 +141,7 @@ header #home .img-home img {
   gap: 2rem;
   padding: 2rem 0;
   flex-direction: row-reverse;
+  background: #fafbf6;
 }
 #nosso-espaco .detalhes .accordion {
   width: 100%;
@@ -226,6 +227,7 @@ header #home .img-home img {
 }
 
 #servico {
+  background: #fafbf6;
   padding: 5rem 0;
 }
 #servico .cards {
@@ -236,21 +238,22 @@ header #home .img-home img {
   justify-content: center;
 }
 #servico .cards .card {
-  background: #cb6a7e;
+  background: url(../../assets/fundo.png);
   padding: 1rem 1.5rem;
   text-align: center;
-  border: 1px solid white;
+  border: 1px solid #F9B401;
   border-radius: 3rem;
+  background-color: linear-gradient(180deg, rgba(211, 146, 159, 0.968627451) 0%, #fafbf6 94.87%);
 }
 #servico .cards .card-titulo {
   font-family: "Krona One", sans-serif;
   font-size: 1.6rem;
-  color: #0C0421;
+  color: #000;
 }
 #servico .cards .card-texto {
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
-  color: #0C0421;
+  color: #e6c1c8;
 }
 
 .galeria {
@@ -399,6 +402,7 @@ header #home .img-home img {
   align-items: center;
   justify-content: space-between;
   text-align: center;
+  background: #fafbf6;
 }
 #desconto h4 {
   font-family: "Krona One", sans-serif;
@@ -443,6 +447,7 @@ header #home .img-home img {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
+  background: #fafbf6;
 }
 #contatos .contatos-imgs {
   max-width: 50%;
@@ -515,9 +520,6 @@ header #home .img-home img {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   color: #0C0421;
-}
-
-.footer {
   background: url(../../assets/footer.png);
   display: inline-block;
   padding-left: 50px;
@@ -531,6 +533,6 @@ header #home .img-home img {
     display: inline-block;
     padding-left: 50px;
     line-height: 15px;
-    width: 80%;
+    width: 240px;
   }
 }/*# sourceMappingURL=styles.css.map */

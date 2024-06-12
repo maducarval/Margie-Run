@@ -2,6 +2,7 @@
 @use '../abstract/mixins';
 
 #servico {
+    background: #fafbf6;
     // background: variaveis.$gradiente-primario;
     padding: 5rem 0;
 
@@ -12,18 +13,19 @@
         justify-content: center;
 
         .card {
-            background: variaveis.$cor-default;
+            background: url(../../assets/fundo.png);
             padding: 1rem 1.5rem;
             text-align: center;
-            border: 1px solid white;
+            border: 1px solid #F9B401;
             border-radius: 3rem;
+            background-color: variaveis.$gradiente-primario;
 
             &-titulo {
-                @include mixins.ff-fs-cl(variaveis.$ft-titulos, 1.6rem, $cor-quaternaria);
+                @include mixins.ff-fs-cl(variaveis.$ft-titulos, 1.6rem, #000);
             }
 
             &-texto {
-                @include mixins.ff-fs-cl(variaveis.$ft-textos, 1.2rem, $cor-quaternaria);
+                @include mixins.ff-fs-cl(variaveis.$ft-textos, 1.2rem, variaveis.$cor-quaternaria);
             }
         }
     }

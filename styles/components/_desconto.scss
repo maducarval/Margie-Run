@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: space-between;
     text-align: center;
+    background: #fafbf6;
 
     h4 {
         @include mixins.ff-fs-cl(variaveis.$ft-titulos, 1.6rem, variaveis.$cor-primaria);
